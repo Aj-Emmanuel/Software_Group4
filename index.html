@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My To-Do List</h1>
+
+    <div class="progress-container">
+      <div id="progressBar"></div>
+      <div id="progressCircle">0 / 0</div>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <input type="number" id="dueMinutesInput" placeholder="Due in minutes" min="1" style="width: 130px;" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <img id="emptyImage" src="empty.png" alt="emptyImage" style="width:100%; max-width:300px; display:block; margin-left: 20px;" />
+
+    <button id="clearAllBtn">Clear All</button>
+    
+  </div>
+<footer class="footer">
+ Software Engineering group 4 &copy; 2025 | By Matric No: 2005002040 - 2005002053
+  <br>Mainly by 2005002044
+  <br>2005002045
+  <br>2005002040
+  <br>2005002041
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
